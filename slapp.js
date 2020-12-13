@@ -38,6 +38,7 @@ function draw() {
     contentTable.style.display = "none";
     eof.innerHTML = "Happy New Year";
     eof.style.color = "#ff0000";
+    eof.style.fontSize = "40px";
     noLoop();
   }
 
