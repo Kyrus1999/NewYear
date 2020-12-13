@@ -1,4 +1,4 @@
-var titleName = "Slaps-Christmas";
+var titleName = "New Year Timer";
 
 
 var memoryTable = document.getElementById("contentTable");
@@ -22,9 +22,9 @@ function setup() {
   tableSlots = [yearV, monthV, dayV, hourV, minuteV, secV];
   let tyear = 2020;
   let tmonth = 12;
-  let tday = 24;
-  let thour = 20;
-  let tminute = 0;
+  let tday = 13;
+  let thour = 13;
+  let tminute = 49;
   let tsec = 0;
   targetDate = [tyear, tmonth, tday, thour, tminute, tsec];
 
@@ -36,7 +36,7 @@ function draw() {
   relate();
   if (deltaDate[0] < 0) {
     contentTable.style.display = "none";
-    eof.innerHTML = "Event has passed";
+    eof.innerHTML = "Happy New Year";
     eof.style.color = "#ff0000";
     noLoop();
   }
